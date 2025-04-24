@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>About | Team 10152</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About | Team 10152</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <script defer src="script.js"></script>
 </head>
 <body>
+
 <header class="sticky-header">
   <nav class="navbar container">
-    <a href="index.html" class="logo"><span class="logo-text">Team&nbsp;10152</span><img src="images/logo.png" class="logo-icon" alt="logo"></a>
+    <a href="index.html" class="logo">
+      <span class="logo-text">Team&nbsp;10152</span>
+      <img class="logo-icon" src="images/logo.png" alt="logo">
+    </a>
+
     <ul class="nav-links">
       <li class="dropdown">
         <a href="about.html">About</a>
         <ul class="dropdown-menu">
-          <li><a href="#mission">Mission</a></li>
+          <li><a href="about.html#mission">Mission</a></li>
           <li><a href="history.html">History</a></li>
         </ul>
       </li>
@@ -30,18 +35,40 @@
 
 <section class="page-hero"><h1>About&nbsp;Us</h1></section>
 
-<section class="content container">
-  <h2 id="mission">Mission</h2>
-  <p>Team 10152 empowers students to innovate through robotics while uplifting our community with STEM outreach.</p>
-  <h2>Core&nbsp;Values</h2>
-  <ul class="values">
-    <li>Gracious&nbsp;Professionalism</li>
-    <li>Inclusive&nbsp;Teamwork</li>
-    <li>Relentless&nbsp;Curiosity</li>
-    <li>Community&nbsp;Impact</li>
-  </ul>
+<section class="about-grid container">
+  <div class="about-text">
+    <h2 id="mission">Mission</h2>
+    <p>Orbotics empowers students to innovate through robotics while uplifting our community with STEM outreach.</p>
+    <br>
+    <h2>Who Are We?</h2>
+    <p>Our team, Greeley Orbotics, is a student-run rookie FRC robotics team. Since our founding in 2023 we’ve grown to more than seventy diverse students. Beyond competition, we help members and the community build skills in design, software, construction, and business management.</p>
+  </div>
+
+  <div class="about-img">
+    <img src="images/2024-2025/Full.Team.Photo.jpg" alt="Full Team Photo">
+  </div>
 </section>
 
-<footer><div class="container"><p>&copy;2025 Team&nbsp;10152 Robotics</p></div></footer>
+<section class="coaches container">
+  <h2>Our&nbsp;Coaches</h2>
+
+  <div class="coaches-grid">
+    <div class="coach-card">
+      <img src="images/ritter.jpg" alt="Mr. Ritter">
+      <h3>Mr.&nbsp;Nick&nbsp;Ritter</h3>
+      <p class="role">Coach – Logistics, Software, Drive Team</p>
+      <p class="desc"></p>
+    </div>
+
+    <div class="coach-card">
+      <img src="images/danko.jpg" alt="Mr. Danko">
+      <h3>Mr.&nbsp;Matt&nbsp;Danko</h3>
+      <p class="role">Coach – Logistics, Mechanics, Pit Crew</p>
+      <p class="desc"></p>
+    </div>
+  </div>
+</section>
+
+<footer><div class="container"><p>&copy;2025&nbsp;Orbotics – FRC Team 10152</p></div></footer>
 </body>
 </html>

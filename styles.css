@@ -154,14 +154,44 @@ a {
   display: none;
   flex-direction: column;
   gap: 5px;
-  cursor: pointer
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1100
 }
 
 .burger span {
   width: 25px;
   height: 3px;
   background: var(--clr-text);
-  transition: transform .4s
+  transition: transform .35s, var(--transition)
+}
+
+.burger.active span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg)
+}
+
+.burger.active span:nth-child(2) {
+  opacity: 0
+}
+
+.burger.active span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg)
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, .35);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .35s;
+  z-index: 1050;
+}
+
+.overlay.active {
+  opacity: 1;
+  pointer-events: auto
 }
 
 @media(max-width:880px) {
